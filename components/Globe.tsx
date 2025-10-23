@@ -19,7 +19,7 @@ export function Globe({
   latencies,
   onRegionClick,
 }: GlobeProps) {
-  const globeEl = useRef<any>();
+  const globeEl = useRef<any>(null);
   const [autoRotate, setAutoRotate] = useState(true);
 
   useEffect(() => {
